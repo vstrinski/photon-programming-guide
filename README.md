@@ -6,17 +6,13 @@ You can even call them the WiFi or Cellular equivalent of the [Arduino&copy;](ww
 
 With very little development effort both boards allow you to build connected (to the Internet) devices and have them push data out and consume data in. Aside from the device API there is also cloud API which lets you consume and use that data and do many wonderful things.
 
-TLDR? If you want you can skip the overview and go straight to the [The Guide](#the-guide) !
+TL;DR? If you want you can skip the overview and go straight to the [The Guide](#the-guide) !
 
 ## Overview
 
 In this guide we'll be focusing on the Photon device. Most of the instrictions apply to the Electron too.
 
-You can find the official documentation at https://docs.particle.io/guide/getting-started/start/photon/ but in case you already have some coding experience you might find it somewhat lacking.
-
-Most of Particle's documentation is written with Mac users in mind and if you happened to have a PC things may seem overly complicated.
-
-Hence this guide and the goal to keep them simple!
+You can find the official documentation at https://docs.particle.io/guide/getting-started/start/photon/ but in case you already have some coding experience you might find it somewhat lacking. Most of Particle's documentation is written with Mac users in mind and if you happened to have a PC things may seem overly complicated. Hence this guide and the goal to keep them simple!
 
 ### "The KISS Principle" or "Can I use NOTEPAD as my editor?"
 
@@ -36,15 +32,17 @@ You may have searched the internet already and may have [found](https://www.spar
 
 Here they are again in order from simplest to most comlicated:
 
-  - All-online, where everything happens over the web
+  - All-online, where everything happens over the web and in a browser
     * Claim your device and configure its WiFi (with your cell phone - no computer required) - see [instructions](https://docs.particle.io/guide/getting-started/start/photon/#connect-your-photon)
     * Use [Particle's Web Editor](https://build.particle.io/)
     * Push new firmware to your Photon from the web (online update)
+
   - Edit locally, compile online
     * Do the initial WiFi setup of your device via USB cable from your computer (or you can still claim your device with just your cell phone)
     * Use your favorite editor to write your code (and if NOTEPAD happened to be your choice - that's fine!)
     * compile online - save yourself setting up the whole compiler chain and instead push your source files to Particle's servers which will compile them for you and give you the binary back
     * Upload your compiled binary via USB cable
+
   - Do everything offline - see "simple" guide at https://community.particle.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829/2
     * Initialize, claim and configure WiFi for your Photon (use either method - cell phone or computer/USB cable)
     * Install ARM-GCC toolchain 
@@ -60,7 +58,7 @@ For simplicity we'll stay away from USB cables and drivers. We'll use the cloud 
 
 Here is an overview of the process:
   * Claim and initially configure your device (using phone, or see below for doing that using your computer and a USB cable)
-  * Install "The Prerequisite" software - (Node.JS)[nodejs.org] with Particle's Command-Line Interface (CLI) which runs on top of NodeJS
+  * Install "The Prerequisite" software - [Node.JS](nodejs.org) with Particle's Command-Line Interface (CLI) which runs on top of NodeJS
   * Edit locally (yup, NOTEPAD is just fine!) - you can use one of the examples from this repository as a start
   * Use Particle's online compiler
   * Push updated firmware to your device via the web
@@ -75,8 +73,8 @@ A USB cable is your solution!
 Here is how the process looks in summary:
 
   - Install pre-requisites:
-    * (NodeJS)[nodejs.org] and then follow [instructions for installing Particle CLI](https://docs.particle.io/guide/tools-and-features/cli/photon/#installing)
-    * On Windows: you will need the [Particle USB Driver](https://s3.amazonaws.com/spark-website/Particle.zip) - if you need more details and instructions they're in the link below
+    * [NodeJS](nodejs.org) and then follow [instructions for installing Particle CLI](https://docs.particle.io/guide/tools-and-features/cli/photon/#installing)
+    * On Windows: you will need the [Particle USB Driver](https://s3.amazonaws.com/spark-website/Particle.zip)
     * [Connect your device over USB](https://docs.particle.io/guide/getting-started/connect/photon/)
   - Claim anc configure WiFi on your device - optional and probably not really necessary, but may make later steps a bit easier.
   - Compile your first program - you can use the examples from this repository
