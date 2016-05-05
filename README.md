@@ -146,13 +146,13 @@ That's all!
 If you want you can push the new firmware via the USB cable, or you can tell Particle.io to remote-flash your device with the new firmware.
 
 To upload it locally via USB here is an example of the command:
-
+```
   particle flash --serial fw.bin
-
+```
 or if you want to flash your "MyPhotonDevice" trough the web:
-
+```
   particle flash MyPhotonDevice fw.bin
-
+```
 ## Debugging
 
 Unfortunately there is no integrated debugging. So that part is not exactly easy.
